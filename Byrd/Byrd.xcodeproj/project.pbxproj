@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECF15BBD2A23A24600612CBA /* ByrdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF15BBC2A23A24600612CBA /* ByrdApp.swift */; };
+		ECF15BBF2A23A24600612CBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF15BBE2A23A24600612CBA /* ContentView.swift */; };
+		ECF15BC12A23A24700612CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF15BC02A23A24700612CBA /* Assets.xcassets */; };
+		ECF15BC42A23A24700612CBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF15BC32A23A24700612CBA /* Preview Assets.xcassets */; };
+		ECF15BCE2A23A24800612CBA /* ByrdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF15BCD2A23A24800612CBA /* ByrdTests.swift */; };
+		ECF15BD82A23A24800612CBA /* ByrdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF15BD72A23A24800612CBA /* ByrdUITests.swift */; };
+		ECF15BDA2A23A24800612CBA /* ByrdUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF15BD92A23A24800612CBA /* ByrdUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECF15BCA2A23A24800612CBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF15BB12A23A24600612CBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF15BB82A23A24600612CBA;
+			remoteInfo = Byrd;
+		};
+		ECF15BD42A23A24800612CBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF15BB12A23A24600612CBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF15BB82A23A24600612CBA;
+			remoteInfo = Byrd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECF15BB92A23A24600612CBA /* Byrd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Byrd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF15BBC2A23A24600612CBA /* ByrdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByrdApp.swift; sourceTree = "<group>"; };
+		ECF15BBE2A23A24600612CBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECF15BC02A23A24700612CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECF15BC32A23A24700612CBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECF15BC92A23A24800612CBA /* ByrdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ByrdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF15BCD2A23A24800612CBA /* ByrdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByrdTests.swift; sourceTree = "<group>"; };
+		ECF15BD32A23A24800612CBA /* ByrdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ByrdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF15BD72A23A24800612CBA /* ByrdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByrdUITests.swift; sourceTree = "<group>"; };
+		ECF15BD92A23A24800612CBA /* ByrdUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByrdUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECF15BB62A23A24600612CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF15BC62A23A24800612CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF15BD02A23A24800612CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECF15BB02A23A24600612CBA = {
+			isa = PBXGroup;
+			children = (
+				ECF15BBB2A23A24600612CBA /* Byrd */,
+				ECF15BCC2A23A24800612CBA /* ByrdTests */,
+				ECF15BD62A23A24800612CBA /* ByrdUITests */,
+				ECF15BBA2A23A24600612CBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECF15BBA2A23A24600612CBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECF15BB92A23A24600612CBA /* Byrd.app */,
+				ECF15BC92A23A24800612CBA /* ByrdTests.xctest */,
+				ECF15BD32A23A24800612CBA /* ByrdUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECF15BBB2A23A24600612CBA /* Byrd */ = {
+			isa = PBXGroup;
+			children = (
+				ECF15BBC2A23A24600612CBA /* ByrdApp.swift */,
+				ECF15BBE2A23A24600612CBA /* ContentView.swift */,
+				ECF15BC02A23A24700612CBA /* Assets.xcassets */,
+				ECF15BC22A23A24700612CBA /* Preview Content */,
+			);
+			path = Byrd;
+			sourceTree = "<group>";
+		};
+		ECF15BC22A23A24700612CBA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ECF15BC32A23A24700612CBA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECF15BCC2A23A24800612CBA /* ByrdTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF15BCD2A23A24800612CBA /* ByrdTests.swift */,
+			);
+			path = ByrdTests;
+			sourceTree = "<group>";
+		};
+		ECF15BD62A23A24800612CBA /* ByrdUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF15BD72A23A24800612CBA /* ByrdUITests.swift */,
+				ECF15BD92A23A24800612CBA /* ByrdUITestsLaunchTests.swift */,
+			);
+			path = ByrdUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECF15BB82A23A24600612CBA /* Byrd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF15BDD2A23A24800612CBA /* Build configuration list for PBXNativeTarget "Byrd" */;
+			buildPhases = (
+				ECF15BB52A23A24600612CBA /* Sources */,
+				ECF15BB62A23A24600612CBA /* Frameworks */,
+				ECF15BB72A23A24600612CBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Byrd;
+			productName = Byrd;
+			productReference = ECF15BB92A23A24600612CBA /* Byrd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECF15BC82A23A24800612CBA /* ByrdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF15BE02A23A24800612CBA /* Build configuration list for PBXNativeTarget "ByrdTests" */;
+			buildPhases = (
+				ECF15BC52A23A24800612CBA /* Sources */,
+				ECF15BC62A23A24800612CBA /* Frameworks */,
+				ECF15BC72A23A24800612CBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF15BCB2A23A24800612CBA /* PBXTargetDependency */,
+			);
+			name = ByrdTests;
+			productName = ByrdTests;
+			productReference = ECF15BC92A23A24800612CBA /* ByrdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECF15BD22A23A24800612CBA /* ByrdUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF15BE32A23A24800612CBA /* Build configuration list for PBXNativeTarget "ByrdUITests" */;
+			buildPhases = (
+				ECF15BCF2A23A24800612CBA /* Sources */,
+				ECF15BD02A23A24800612CBA /* Frameworks */,
+				ECF15BD12A23A24800612CBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF15BD52A23A24800612CBA /* PBXTargetDependency */,
+			);
+			name = ByrdUITests;
+			productName = ByrdUITests;
+			productReference = ECF15BD32A23A24800612CBA /* ByrdUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECF15BB12A23A24600612CBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ECF15BB82A23A24600612CBA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					ECF15BC82A23A24800612CBA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = ECF15BB82A23A24600612CBA;
+					};
+					ECF15BD22A23A24800612CBA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = ECF15BB82A23A24600612CBA;
+					};
+				};
+			};
+			buildConfigurationList = ECF15BB42A23A24600612CBA /* Build configuration list for PBXProject "Byrd" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECF15BB02A23A24600612CBA;
+			productRefGroup = ECF15BBA2A23A24600612CBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECF15BB82A23A24600612CBA /* Byrd */,
+				ECF15BC82A23A24800612CBA /* ByrdTests */,
+				ECF15BD22A23A24800612CBA /* ByrdUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECF15BB72A23A24600612CBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF15BC42A23A24700612CBA /* Preview Assets.xcassets in Resources */,
+				ECF15BC12A23A24700612CBA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF15BC72A23A24800612CBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF15BD12A23A24800612CBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECF15BB52A23A24600612CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF15BBF2A23A24600612CBA /* ContentView.swift in Sources */,
+				ECF15BBD2A23A24600612CBA /* ByrdApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF15BC52A23A24800612CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF15BCE2A23A24800612CBA /* ByrdTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF15BCF2A23A24800612CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF15BD82A23A24800612CBA /* ByrdUITests.swift in Sources */,
+				ECF15BDA2A23A24800612CBA /* ByrdUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECF15BCB2A23A24800612CBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF15BB82A23A24600612CBA /* Byrd */;
+			targetProxy = ECF15BCA2A23A24800612CBA /* PBXContainerItemProxy */;
+		};
+		ECF15BD52A23A24800612CBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF15BB82A23A24600612CBA /* Byrd */;
+			targetProxy = ECF15BD42A23A24800612CBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ECF15BDB2A23A24800612CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECF15BDC2A23A24800612CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECF15BDE2A23A24800612CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Byrd/Preview Content\"";
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.Byrd";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECF15BDF2A23A24800612CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Byrd/Preview Content\"";
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.Byrd";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECF15BE12A23A24800612CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.ByrdTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Byrd.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Byrd";
+			};
+			name = Debug;
+		};
+		ECF15BE22A23A24800612CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.ByrdTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Byrd.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Byrd";
+			};
+			name = Release;
+		};
+		ECF15BE42A23A24800612CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.ByrdUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Byrd;
+			};
+			name = Debug;
+		};
+		ECF15BE52A23A24800612CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YBM22U9FU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fernando-de-Lucas.ByrdUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Byrd;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECF15BB42A23A24600612CBA /* Build configuration list for PBXProject "Byrd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF15BDB2A23A24800612CBA /* Debug */,
+				ECF15BDC2A23A24800612CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF15BDD2A23A24800612CBA /* Build configuration list for PBXNativeTarget "Byrd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF15BDE2A23A24800612CBA /* Debug */,
+				ECF15BDF2A23A24800612CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF15BE02A23A24800612CBA /* Build configuration list for PBXNativeTarget "ByrdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF15BE12A23A24800612CBA /* Debug */,
+				ECF15BE22A23A24800612CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF15BE32A23A24800612CBA /* Build configuration list for PBXNativeTarget "ByrdUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF15BE42A23A24800612CBA /* Debug */,
+				ECF15BE52A23A24800612CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECF15BB12A23A24600612CBA /* Project object */;
+}
