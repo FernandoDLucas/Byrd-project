@@ -17,7 +17,6 @@ struct ByrdApp: App {
 }
 
 import Combine
-import Compass
 
 struct ContentView: View {
 
@@ -46,6 +45,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 import Foundation
+import Compass
 
 final class ViewModel: ObservableObject {
     @Published var compass: NavigationCompass
@@ -55,12 +55,7 @@ final class ViewModel: ObservableObject {
 
     init(compass: NavigationCompass) {
         self.compass = compass
-        compass
-            .objectWillChange
-            .sink{ [weak self] _ in
-                self?.objectWillChange.send()
-            }
-            .store(in: &cancellable)
+        compass.linkPublisher(self.objectWillChange)
     }
 
     func onClick() {
@@ -69,6 +64,7 @@ final class ViewModel: ObservableObject {
 
 }
 
+import CompassInterface
 final class DeepLinkResolver {
 
     func resolve(

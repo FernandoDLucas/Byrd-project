@@ -24,8 +24,8 @@ public struct NavigationRoot<Root>: View where Root: View{
     public var body: some View {
         NavigationStack(path: $compass.navigationPath) {
             root
-                .navigationDestination(for: HashableView.self) { hashView in
-                    hashView.view
+                .navigationDestination(for: HashableView.self) { view in
+                    view.content
                 }
         }
         .sheet(isPresented: $compass.showModal) {

@@ -6,16 +6,10 @@
 //  Copyright © 2023 com.fernanddolucas.navigation. All rights reserved.
 //
 
+import Combine
+import CompassInterface
 import Foundation
 import SwiftUI
-
-public protocol NavigationCompassProtocol {
-    func navigate(for view: any Hashable)
-    func present(
-        for view: AnyView,
-        basedOn navigationType: NavigationModalType
-    )
-}
 
 public final class NavigationCompass: ObservableObject, NavigationCompassProtocol {
 
@@ -23,6 +17,7 @@ public final class NavigationCompass: ObservableObject, NavigationCompassProtoco
     @Published var showModal: Bool = false
     @Published var navigationPath = NavigationPath()
     private (set) var modalView: AnyView?
+    private var cancellable: Set<AnyCancellable> = []
 
     public init() {}
 
@@ -43,4 +38,11 @@ public final class NavigationCompass: ObservableObject, NavigationCompassProtoco
         }
     }
 
+    public func linkPublisher(_ observableObject: ObservableObjectPublisher) {
+        objectWillChange
+            .sink { _ in
+                observableObject.send()
+            }
+            .store(in: &cancellable)
+    }
 }

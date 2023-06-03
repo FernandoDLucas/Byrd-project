@@ -2,18 +2,17 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project(
-    name: "Compass",
-    organizationName: "com.fernanddolucas.Compass",
+    name: "DI",
+    organizationName: "com.fernanddolucas.DI",
     packages: [],
     targets: [Target(
-        name: "Compass",
+        name: "DI",
         platform: .iOS,
         product: .framework,
-        bundleId: "com.fernanddolucas.Compass",
+        bundleId: "com.fernanddolucas.DI",
         sources: ["Sources/**"],
         dependencies: [
-            .dependency(.compassInterface),
-            .dependency(.dI)
+            .external(.swinject)
         ]
     )]
 )

@@ -1,9 +1,10 @@
+import CompassInterface
 import SwiftUI
 
 public final class HashableView: AnyHashableView {
-    public var view: AnyView?
+    public var content: AnyView?
 
-    public init(_ view: AnyView?) {
-        self.view = view
+    public init(_ content: AnyView?) {
+        self.content = content
     }
 }
