@@ -14,6 +14,6 @@ public enum SystemDependency: String, DependencyProtocol {
     case coreGraphics
     
     public var target: TargetDependency {
-        .sdk(name: self.identifier, type: .framework)
+        .sdk(name: self.target, type: .framework)
     }
 }

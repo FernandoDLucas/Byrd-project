@@ -20,7 +20,6 @@ public struct NavigationRoot<Root>: View where Root: View{
         self.root = root()
     }
 
-
     public var body: some View {
         NavigationStack(path: $compass.navigationPath) {
             root

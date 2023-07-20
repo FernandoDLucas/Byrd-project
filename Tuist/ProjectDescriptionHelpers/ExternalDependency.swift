@@ -11,6 +11,6 @@ public enum ExternalDependency: String, DependencyProtocol {
     case swinject
 
     public var target: ProjectDescription.TargetDependency {
-        .external(name: self.identifier)
+        .external(name: self.target)
     }
 }

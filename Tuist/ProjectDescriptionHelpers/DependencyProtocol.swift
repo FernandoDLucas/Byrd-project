@@ -11,8 +11,12 @@ public protocol DependencyProtocol: RawRepresentable, CaseIterable {
 }
 
 extension DependencyProtocol where RawValue == String {
-    var identifier: String {
+    var path: String {
         rawValue.firstUppercased
+    }
+
+    var target: String {
+        "\(self)".firstUppercased
     }
 }
 

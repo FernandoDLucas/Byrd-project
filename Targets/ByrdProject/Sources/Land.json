@@ -1,0 +1,13 @@
+{
+    "id": "some",
+    "componentType": "text",
+    "landItem": [{
+        "_type": "Image",
+        "imageURLString": "someImageURL"
+    },
+        {
+            "_type": "Image",
+            "imageURLString": "someOtherImageURL"
+        }
+    ]
+}

@@ -59,7 +59,26 @@ final class ViewModel: ObservableObject {
     }
 
     func onClick() {
-        deepLinkResolver.resolve(compass: compass)
+        let url = Bundle.main.url(forResource: "Land", withExtension: "json")
+        let data = try? Data(contentsOf: url!)
+        
+        let decoder = JSONDecoder()
+        decoder.userInfo[.polymorphicTypes] = [
+            Image.self,
+        ]
+
+        do {
+            let comp = try decoder.decode(
+                LandComponent.self,
+                from: data!
+            )
+            print(DataWrapper().execute(
+                from: comp.landItem,
+                get: Byrd.Image.self)
+            )
+        } catch {
+            print(error)
+        }
     }
 
 }

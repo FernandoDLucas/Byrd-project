@@ -8,12 +8,20 @@
 import ProjectDescription
 
 public enum Dependency: String, DependencyProtocol {
-    case compass, compassInterface, dI 
+    case compass
+    case compassInterface
+    case dI
+    case land = "Land/Land"
+    case landData  = "Land/LandData"
+    case landDataInterface  = "Land/LandDataInterface"
+    case landDomain = "Land/LandDomain"
+    case landDomainInterface = "Land/LandDomainInterface"
+    case landInterface = "Land/LandInterface"
 
     public var target: ProjectDescription.TargetDependency {
         .project(
-            target: self.identifier,
-            path: .relativeToRoot("Targets/\(self.identifier)")
+            target: self.target,
+            path: .relativeToRoot("Targets/\(self.path)")
         )
     }
 }
